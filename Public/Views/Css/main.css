@@ -1,0 +1,111 @@
+/******************************************************************************
+*******************************************************************************
+*
+*     html
+*
+*******************************************************************************
+******************************************************************************/
+html {
+    background:                         linear-gradient(to bottom, lightblue, lightgoldenrodyellow) no-repeat fixed;
+    color:                              navy;
+    font-family:                        Arial, Geneva, Helvetica, sans-serif;
+    font-size:                          14pt;
+    line-height:                        1.5;
+    height:                             100%;
+}
+
+/******************************************************************************
+*******************************************************************************
+*
+*     body
+*
+*******************************************************************************
+******************************************************************************/
+body {
+}
+
+/******************************************************************************
+*******************************************************************************
+*
+*     header
+*
+*******************************************************************************
+******************************************************************************/
+header {
+    background:                         rgba(255,200,100, 0.5);
+    height:                             100px;
+    border:                             2px solid brown;
+    -webkit-box-shadow:                 inset 0px 0px 5px brown;
+    -moz-box-shadow:                    inset 0px 0px 5px brown;
+    box-shadow:                         inset 0px 0px 5px brown;
+    border-bottom-left-radius:          15px;
+    border-bottom-right-radius:         15px;
+}
+
+
+/******************************************************************************
+*******************************************************************************
+*
+*    main
+*
+******************************************************************************/
+main {
+    display:                            table;
+    width:                              100%;
+}
+
+.table-row {
+    display:                            table-row;
+    width:                              100%;
+    text-align:                         center;
+}
+
+.cost-calculate, .price {
+    display:                            table-cell;
+    width:                              50%;
+    vertical-align:                     top;
+    text-align:                         center;
+    margin:                             0 auto;
+    border:                             solid brown 2px;
+    border-radius:                      10px;
+}
+
+table {
+    width:                              100%;
+}
+
+select{
+    display:                            block;
+    text-align:                         center;
+    margin:                             0 auto;
+}
+
+:link, :visited {
+
+}
+
+.button, [type='submit'] {
+    text-decoration:             none;
+    color:                       black;
+    background:            linear-gradient(to top, #dfdfdf, #f5f5f5);
+    margin:                      3px auto;
+    padding:                     0 10px;
+    display:                     inline-block;
+    border:                      solid 1px #7b7b7b;
+    height:                      33px;
+    -webkit-border-radius:       10px;
+    -moz-border-radius:          10px;
+    border-radius:               10px;
+}
+
+footer {
+    background:                         rgba(255,200,100, 0.5);
+    height:                             100px;
+    border:                             2px solid brown;
+    -webkit-box-shadow:                 inset 0px 0px 5px brown;
+    -moz-box-shadow:                    inset 0px 0px 5px brown;
+    box-shadow:                         inset 0px 0px 5px brown;
+    border-top-left-radius:          15px;
+    border-top-right-radius:         15px;
+
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru" title="Learn Decorator">
+    <head>
+        <meta charset="UTF-8">
+        <title>Learn pattern Decorator</title>
+        <meta name="author" content="alexandr05@list.ru">
+        <meta name="keywords" content="pattern, decorator, learn, Freeman">
+        <meta name="description" content="Learn Patterns">
+        <meta name="robots" content="index, follow">
+        <link href="Views/Css/reset.css" type="text/css" rel="stylesheet">
+        <link href="Views/Css/main.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Starbuzz Coffee</h1>
+        </header>
+        
+        <main>
+            <div class="table-row">
+                <div class="cost-calculate">
+                    <form action="" method="post">
+                        <fieldset>
+                            <legend>Заказ кофе</legend>
+                            <label for="coffee">Выберите кофе</label>
+                            <select name="coffee" id="coffee">
+                                <option value="house_blend" selected>Домашняя смесь</option>
+                                <option value="dark_roast">Тёмная обжарка</option>
+                                <option value="decaf">Без кофеина</option>
+                                <option value="Espresso">Эспрессо</option>
+                            </select>
+                            <label for="size">Выбирите порцию</label>
+                            <select name="size" id="size">
+                                <option value="small">Маленькая</option>
+                                <option value="middle" selected>Средняя</option>
+                                <option value="large">Большая</option>
+                            </select>
+                            <label for="milk">Молочная пена</label>
+                            <input type="checkbox" name="milk" id="milk" value="milk">
+                            <label for="mocha">Шоколад</label>
+                            <input type="checkbox" name="mocha" id="mocha" value="mocha">
+                            <label for="soy">Соя</label>
+                            <input type="checkbox" name="soy" id="soy" value="soy">
+                            <label for="whip">Сливки</label>
+                            <input type="checkbox" name="whip" id="whip" value="whip">
+                            <p>
+                                <input type="submit" value="Заказать">
+                                <a href="/" class="button">Сброс</a>
+                            </p>
+                        </fieldset>
+                    </form>
+
+                </div>
+
+                <div class="price">
+                    <table>
+                        <caption>Starbuzz Coffee Price</caption>
+                        <thead>
+                        <tr>
+                            <th scope="col" rowspan="2">Кофе</th>
+                            <th scope="col" colspan="3">Порция</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Маленкая</th>
+                            <th scope="col">Средняя</th>
+                            <th scope="col">Большая</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Домашняя смесь</th>
+                            <td>0.30</td>
+                            <td>0.60</td>
+                            <td>0.90</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Тёмная обжарка</th>
+                            <td>0.33</td>
+                            <td>0.66</td>
+                            <td>0.99</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Без кофеина</th>
+                            <td>0.35</td>
+                            <td>0.70</td>
+                            <td>1.05</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Эспрессо</th>
+                            <td>0.66</td>
+                            <td>1.32</td>
+                            <td>1.98</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="col">Дополнения</th>
+                            <th scope="col" colspan="3"></th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Молочная пена</th>
+                            <td>0.03</td>
+                            <td>0.06</td>
+                            <td>0.09</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Шоколад</th>
+                            <td>0.07</td>
+                            <td>0.14</td>
+                            <td>0.21</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Соя</th>
+                            <td>0.05</td>
+                            <td>0.10</td>
+                            <td>0.15</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Взбитые сливки</th>
+                            <td>0.04</td>
+                            <td>0.08</td>
+                            <td>0.12</td>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                Ваш заказ:
+            </p>
+            <p>
+                К оплате:
+            </p>
+        </footer>
+    </body>
+</html>
