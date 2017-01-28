@@ -63,7 +63,7 @@ abstract class Beverage
      *
      * @var int $size размер порции кофе
      */
-    public $size;
+    public static $size;
 
 
     /**
@@ -102,13 +102,13 @@ abstract class Beverage
     {
         switch($size) {
             case ("small"):
-                $this->size = self::SMALL;
+                self::$size = self::SMALL;
                 break;
             case ("large"):
-                $this->size = self::LARGE;
+                self::$size = self::LARGE;
                 break;
             default:
-                $this->size = self::MIDDLE;
+                self::$size = self::MIDDLE;
         }
     }
 
@@ -119,6 +119,6 @@ abstract class Beverage
      */
     public function getSize()
     {
-        return $this->size;
+        return self::$size;
     }
 }

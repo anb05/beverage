@@ -28,7 +28,7 @@
                                 <option value="house_blend" selected>Домашняя смесь</option>
                                 <option value="dark_roast">Тёмная обжарка</option>
                                 <option value="decaf">Без кофеина</option>
-                                <option value="Espresso">Эспрессо</option>
+                                <option value="espresso">Эспрессо</option>
                             </select>
                             <label for="size">Выбирите порцию</label>
                             <select name="size" id="size">
@@ -128,9 +128,11 @@
         <footer>
             <p>
                 Ваш заказ:
+                <?= @$describe; ?>
             </p>
             <p>
                 К оплате:
+                <?= @$cost; ?>
             </p>
         </footer>
     </body>

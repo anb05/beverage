@@ -39,18 +39,18 @@ class Soy extends CondimentDecorator
      *
      * @var float
      */
-    private $price = 0.05;
+    protected $price = 0.05;
 
     /**
      * Soy constructor.
      *
      * @param Beverage $beverage
-     *
-     * @return void
      */
     public function __construct(Beverage $beverage)
     {
         $this->beverage = $beverage;
+
+        $this->description = ', с соей';
     }
 
     /**
@@ -60,11 +60,6 @@ class Soy extends CondimentDecorator
      */
     public function getDescription(): string
     {
-        return $this->beverage->getDescription() . ', с соей';
-    }
-
-    public function cost()
-    {
-        return $this->getSize() * $this->price + $this->beverage->cost();
+        return $this->beverage->getDescription() . $this->description;
     }
 }

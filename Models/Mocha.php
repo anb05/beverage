@@ -39,18 +39,18 @@ class Mocha extends CondimentDecorator
      *
      * @var float
      */
-    private $price = 0.07;
+    protected $price = 0.07;
 
     /**
      * Mocha constructor.
      *
      * @param Beverage $beverage
-     *
-     * @return void
      */
     public function __construct(Beverage $beverage)
     {
         $this->beverage = $beverage;
+
+        $this->description = 'шоколад';
     }
 
     /**
@@ -60,11 +60,7 @@ class Mocha extends CondimentDecorator
      */
     public function getDescription(): string
     {
-        return $this->beverage->getDescription() . ', с шоколадом';
+        return $this->beverage->getDescription() . ', с ' . $this->description . 'ом';
     }
 
-    public function cost()
-    {
-        return $this->getSize() * $this->price + $this->beverage->cost();
-    }
 }

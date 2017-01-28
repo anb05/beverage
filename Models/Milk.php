@@ -39,18 +39,18 @@ class Milk extends CondimentDecorator
      *
      * @var float
      */
-    private $price = 0.03;
+    protected $price = 0.03;
 
     /**
      * Milk constructor.
      *
      * @param Beverage $beverage
-     *
-     * @return void
      */
     public function __construct(Beverage $beverage)
     {
         $this->beverage = $beverage;
+
+        $this->description = ", с молочной пеной";
     }
 
     /**
@@ -60,11 +60,6 @@ class Milk extends CondimentDecorator
      */
     public function getDescription(): string
     {
-        return $this->beverage->getDescription() . ', с молочной пеной';
-    }
-
-    public function cost()
-    {
-        return $this->getSize() * $this->price + $this->beverage->cost();
+        return $this->beverage->getDescription() . $this->description;
     }
 }

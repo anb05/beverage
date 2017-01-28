@@ -39,18 +39,18 @@ class Whip extends CondimentDecorator
      *
      * @var float
      */
-    private $price = 0.04;
+    protected $price = 0.04;
 
     /**
      * Mocha constructor.
      *
      * @param Beverage $beverage
-     *
-     * @return void
      */
     public function __construct(Beverage $beverage)
     {
         $this->beverage = $beverage;
+
+        $this->description = ', со взбитыми сливками';
     }
 
     /**
@@ -60,11 +60,6 @@ class Whip extends CondimentDecorator
      */
     public function getDescription(): string
     {
-        return $this->beverage->getDescription() . ', с шоколадом';
-    }
-
-    public function cost()
-    {
-        return $this->getSize() * $this->price + $this->beverage->cost();
+        return $this->beverage->getDescription() . $this->description;
     }
 }

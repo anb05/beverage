@@ -36,4 +36,8 @@ use Beverage\Models\Beverage;
  */
 abstract class CondimentDecorator extends Beverage
 {
+    public function cost()
+    {
+        return $this->beverage->getSize() * $this->price + $this->beverage->cost();
+    }
 }
