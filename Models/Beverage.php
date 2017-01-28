@@ -50,6 +50,13 @@ abstract class Beverage
      */
     const LARGE = 3;
 
+    /**
+     * Стоимость минимальной порции
+     *
+     * @var float
+     */
+    //private $price = 0.0;
+
 
     /**
      * Размер порции
@@ -72,13 +79,13 @@ abstract class Beverage
      *
      * @return string
      */
-    public function getDescription ()
+    public function getDescription (): string
     {
         return $this->description;
     }
 
     /**
-     * Метод расчета стоисмости продукта
+     * Метод расчета стоисмости порции выбраного размера
      *
      * @return mixed
      */

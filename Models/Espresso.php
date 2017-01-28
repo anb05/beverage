@@ -22,6 +22,7 @@ use Beverage\Models\Beverage;
 
 /**
  * Class Espresso
+ *
  * @package Beverage\Models
  */
 class Espresso extends Beverage

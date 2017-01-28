@@ -1,6 +1,6 @@
 <?php
 /**
- * Класс для создания кофе Тёмная обжарка
+ * Класс для создания кофе Без кофеина
  *
  * PHP version 7.0.1
  *
@@ -21,29 +21,29 @@ use Beverage\Models\Beverage;
 
 
 /**
- * Class DarkRoast
+ * Class Decaf
  *
  * @package Beverage\Models
  */
-class DarkRoast extends Beverage
+class Decaf extends Beverage
 {
     /**
      * Стоимаость маленькой порции
      *
      * @var float
      */
-    private $price = 0.33;
+    private $price = 0.35;
 
     /**
      * Напиток
      *
      * @var string
      */
-    public $description = "Тёмная обжарка";
+    public $description = "Без кофеина";
 
 
     /**
-     * Расчёт стоимости кофе Тёмная обжарка
+     * Расчёт стоимости кофе Без кофеина
      *
      * @return float
      */
