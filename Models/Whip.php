@@ -1,6 +1,6 @@
 <?php
 /**
- * Класс приправы кофе соей
+ * Класс приправы кофе взбитыми сливками
  *
  * PHP version 7.0.1
  *
@@ -21,11 +21,11 @@ namespace Beverage\Models;
 use Beverage\Models\CondimentDecorator;
 
 /**
- * Class Soy
+ * Class Whip
  *
  * @package Beverage\Models
  */
-class Soy extends CondimentDecorator
+class Whip extends CondimentDecorator
 {
     /**
      * Для хранения ссылки на декорируемый объкт
@@ -35,14 +35,14 @@ class Soy extends CondimentDecorator
     public $beverage;
 
     /**
-     * Цена сои для минимальной порции
+     * Цена взбитых сливок для минимальной порции
      *
      * @var float
      */
-    private $price = 0.05;
+    private $price = 0.04;
 
     /**
-     * Soy constructor.
+     * Mocha constructor.
      *
      * @param Beverage $beverage
      *
@@ -54,13 +54,13 @@ class Soy extends CondimentDecorator
     }
 
     /**
-     * Добавляем в кофе сою и меняем описание
+     * Добавляем в кофе взбитые сливки и меняем описание
      *
      * @return string
      */
     public function getDescription(): string
     {
-        return $this->beverage->getDescription() . ', с соей';
+        return $this->beverage->getDescription() . ', с шоколадом';
     }
 
     public function cost()
